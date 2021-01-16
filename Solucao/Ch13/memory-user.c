@@ -2,11 +2,10 @@
 #include <string.h>
 #include <stdio.h>
 
-#include <sys/types.h>
-#include <unistd.h>
+// #include <sys/types.h>
+// #include <unistd.h>
 
 int main(int argc, char *argv[]){
-    printf("The process id: %d\n", getpid());
     if (argc == 2){
         int mb = atoi(argv[1]);
         int n_elem = (mb*1000000)/4;
